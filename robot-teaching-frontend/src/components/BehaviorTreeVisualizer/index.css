@@ -1,0 +1,39 @@
+.app-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.reactflow-wrapper {
+  height: 100%;
+}
+
+.MuiGrid-root.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-right: rgb(200, 200, 200) solid 1px
+}
+
+.sidebar {
+  background-color: white;
+}
+
+.sidebar.read-only {
+  opacity: 0.5;
+}
+
+.sidebar-header {
+  background-color: white;
+  justify-content: space-between;
+}
+
+.sidebar-tab {
+  flex-grow: 1;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+  height: 100%
+}
+
+.sidebar-tab-title {
+  padding-left: 10px;
+}

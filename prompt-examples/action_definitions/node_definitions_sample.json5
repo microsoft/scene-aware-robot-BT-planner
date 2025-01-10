@@ -1,0 +1,33 @@
+{
+    "Actions": [
+        {
+            "Node": "PickUp", //Navigate the robot to @location, look at @object and grasp it from @asset
+            "@object":"",
+            "@asset":"",
+            "@location":"",
+        },
+        {
+            "Node": "PourIntoBucket", //Navigate the robot to @location, then tilt @object in its hand to pour the contents into @asset. This action should only appear after @object had been picked up in a previous action.
+            "@object":"",
+            "@asset":"",
+            "@location":"",
+        },  
+        {
+            "Node": "ThrowAway", //Navigate the robot to @location, then throw @object into @asset. This action should only appear after @object had been picked up in a previous action.
+            "@object":"",
+            "@asset":"",
+            "@location":"",
+        }
+    ],
+    "Conditions": [
+        {
+            "Node": "VisualCheck", //Invoke a vision language model. It return true if a vision system confirms that @true_situation is satisfied. This node should only appear at the beginning of a sequence node.
+            "@true_situation":"",
+        },
+        {
+            "Node": "GoalCheck", //DO NOT USE THIS. This is a placeholder for the ultimate goal check.
+            "@what_to_check":"",
+            "@where_to_check":"",
+        }
+    ],
+}

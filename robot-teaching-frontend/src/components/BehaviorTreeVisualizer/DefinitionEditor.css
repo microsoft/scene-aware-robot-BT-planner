@@ -1,0 +1,36 @@
+.definition-tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.definition-tab-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.definition-tab-header-chip-container {
+    display: flex;
+    align-items: center;
+    height: 18px;
+    margin-left: auto;
+    margin-right: 6px;
+}
+
+.definition-tab-header-chip-container > * {
+    height: 100%;
+    margin: 0px 3px;
+    padding: 0px 3px !important; 
+}
+
+.definition-tab-ace-editor {
+    flex-grow: 1;
+}
+
+.sidebar-tab-alert {
+    border-radius: 0px !important;
+}
+
+.examples-menu {
+    margin-left: 5px;
+}

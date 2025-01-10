@@ -1,0 +1,50 @@
+{
+    "semantic_map_locations": {
+        "table_area": {"position": [0.84473, 0.1469186, 0], "orientation": [0,0,0.0137534,0.999905]},
+        "bucket_area": {"position": [0.156034,-0.115241,0], "orientation": [0,0,-0.654899,0.755717]},
+        "trash_area": {"position": [0.50712, 0.47813, 0], "orientation": [0,0,0.71669,0.69739]}
+    },
+    "objects_metadata": {
+        "cup": {
+            "right situation": {
+                "grasp_type": "power", "hand_laterality": "right",
+                "approach_direction": [0.1, 0.5, 0.0], "depart_direction": [0.0, 0.0, 1.0],
+                "nav_position": [0.70, 0.0, 0.0],
+                "bring_frame": "{find_result}", "bring_position": [-0.1732, -0.2, 0.0], "bring_orientation": [0, 0, -0.6339889056055381, 0.7733421413379025]
+            }
+        }
+    },
+    "assets_metadata": {
+        "table": {
+            "default situation": {
+                "detach_direction": [0.0, 0.0, 0.1], "attach_direction": [0.0, 0.0, -0.08],
+                "nav_position": null,
+                "bring_frame": "{find_result}", "bring_position": [0.0, 0.0, 0.15], "bring_orientation": [0.0, 0.0, 0.0, 1.0],
+                "TODO": "bring orientation should change depending on situation (e.g., passive-cup vs. active-cup)"
+            }
+        },
+        "trash_can": {
+            "default situation": {
+                "nav_position": [0.65, 0.1, 0.0],
+                "bring_frame": "{find_result}", "bring_position": [0.0, 0.0, 0.5], "bring_orientation": [0, 0, -0.6339889056055381, 0.7733421413379025]
+            }
+        },
+        "bucket": {
+            "right situation": {
+                "nav_position": null,
+                "bring_frame": "{find_result}", "bring_position": [0.0, 0.0, 0.15], "bring_orientation": [0, 0, -0.6339889056055381, 0.7733421413379025],
+                "pour_frame": "todo", "pour_axis_position": "todo", "pour_axis_direction": "todo"
+            }
+        }
+    },
+    "asset_object_relations": {
+        "table": ["cup"],
+        "trash_can": [],
+        "bucket": []
+    },
+    "location_asset_relations": {
+        "table_area": ["table"],
+        "trash_area": ["trash_can"],
+        "bucket_area": ["bucket"]
+    }
+}

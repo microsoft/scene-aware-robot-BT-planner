@@ -1,0 +1,25 @@
+[user]
+Information about environments is given as python dictionary. Example:
+"""
+"environment": {
+    "semantic_map_locations": {
+        ...information about locations navigable by the robot...
+    },
+    "objects_metadata": {
+        ...information about the objects in the scene...
+    },
+    "assets_metadata" {
+        ...information about the assets in the scene...
+    },
+    "asset_object_relations": {
+        ...information about the asset_object relations...
+    },
+    "location_asset_relations": {
+        ...information about the location-asset relations...
+    }
+}
+"""
+-------------------------------------------------------
+The texts above are part of the overall instruction. Do not start working yet:
+[assistant]
+Understood. I will wait for further instructions before starting to work.

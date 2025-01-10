@@ -1,14 +1,35 @@
-# Project
+# VLM-driven Behavior Tree for Context-aware Task Planning
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repository provides sample code for the paper *"VLM-driven Behavior Tree for Context-aware Task Planning"* ([arXiv:2501.03968](https://arxiv.org/abs/2501.03968)).
 
-As the maintainer of this project, please make a few updates:
+![overview](./img/overview.jpg)
+![Demo](img/robot_demo.gif)
+## Overview
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+The code is divided into two main components:
+
+1. **Task Planning Server**  
+   - Utilizes GPT to perform **task planning**.
+   - The task planning server leverages the open-source repository:  
+[robotics-task-sequencer-system-framework](https://github.com/microsoft/robotics-task-sequencer-system-framework).  
+This framework supports both **task planning** and **robot execution**.
+   - Examples of the prompts used in the paper are available in the [prompt-examples](./prompt-examples)  directory for reference.
+
+2. **Interactive Frontend**  
+   - Visualizes the results as a **Behavior Tree (BT)**.  
+   - Allows users to interactively manipulate the tree.  
+   - Frontend code can be found in the [robot-teaching-frontend](./robot-teaching-frontend) repository.
+
+
+## Bibliography
+```
+@article{wake2025vlm,
+  title={VLM-driven Behavior Tree for Context-aware Task Planning},
+  author={Wake, Naoki and Kanehira, Atsushi and Sasabuchi, Kazuhiro and Takamatsu, Jun and Ikeuchi, Katsushi},
+  journal={arXiv preprint arXiv:2501.03968},
+  year={2025}
+}
+```
 
 ## Contributing
 
